@@ -48,3 +48,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'haml-rails'
 
 gem 'devise'
+
+# メール確認用
+group :development do
+  gem 'letter_opener'
+end
