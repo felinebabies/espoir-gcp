@@ -1,4 +1,4 @@
-%h1 Home#index
+%h1 ホーム ― 船着き場
 - if user_signed_in?
   Logged in as
   %strong
@@ -10,4 +10,25 @@
   = link_to "Sign up", new_user_registration_path, :class => "navbar-link"
   |
   = link_to "Login", new_user_session_path, :class => "navbar-link"
-%p Find me in app/views/home/index.html.haml
+
+%p
+  ようこそいらっしゃいました。
+  %br/
+  ご希望の船に御乗り下さい。
+
+%h2 参加者募集中の船
+%table
+  %thead
+    %tr
+      %th 開始時刻
+      %th 開催期間（分）
+      %th 状態
+      %th &nbsp;
+
+  %tbody
+    - @games.each do |game|
+      %tr
+        %td= game.startTime
+        %td= game.term
+        %td= game.status
+        %td 乗船手続き
