@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :passengers
   resources :games
   get 'entrance/index'
 

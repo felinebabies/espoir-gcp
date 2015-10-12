@@ -11,12 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151012085428) do
+ActiveRecord::Schema.define(version: 20151012142027) do
 
   create_table "games", force: :cascade do |t|
     t.datetime "startTime"
     t.integer  "term"
     t.integer  "status",     default: 0, null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "passengers", force: :cascade do |t|
+    t.integer  "game_id"
+    t.integer  "user_id"
+    t.string   "name"
+    t.integer  "starCount",  default: 3
+    t.integer  "money",      default: 0
+    t.integer  "debt",       default: 0
+    t.integer  "g_count",    default: 4
+    t.integer  "c_count",    default: 4
+    t.integer  "p_count",    default: 4
+    t.integer  "location",   default: 0
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end

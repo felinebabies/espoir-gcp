@@ -1,0 +1,35 @@
+%h1 Listing passengers
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Starcount
+      %th Money
+      %th Debt
+      %th G count
+      %th C count
+      %th P count
+      %th Location
+      %th
+      %th
+      %th
+
+  %tbody
+    - @passengers.each do |passenger|
+      %tr
+        %td= passenger.name
+        %td= passenger.starCount
+        %td= passenger.money
+        %td= passenger.debt
+        %td= passenger.g_count
+        %td= passenger.c_count
+        %td= passenger.p_count
+        %td= passenger.location
+        %td= link_to 'Show', passenger
+        %td= link_to 'Edit', edit_passenger_path(passenger)
+        %td= link_to 'Destroy', passenger, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Passenger', new_passenger_path

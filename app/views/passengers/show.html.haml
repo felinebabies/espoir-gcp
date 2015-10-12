@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @passenger.name
+%p
+  %b Starcount:
+  = @passenger.starCount
+%p
+  %b Money:
+  = @passenger.money
+%p
+  %b Debt:
+  = @passenger.debt
+%p
+  %b G count:
+  = @passenger.g_count
+%p
+  %b C count:
+  = @passenger.c_count
+%p
+  %b P count:
+  = @passenger.p_count
+%p
+  %b Location:
+  = @passenger.location
+
+= link_to 'Edit', edit_passenger_path(@passenger)
+\|
+= link_to 'Back', passengers_path

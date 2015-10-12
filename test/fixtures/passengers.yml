@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  starCount: 1
+  money: 1
+  debt: 1
+  g_count: 1
+  c_count: 1
+  p_count: 1
+  location: 1
+
+two:
+  name: MyString
+  starCount: 1
+  money: 1
+  debt: 1
+  g_count: 1
+  c_count: 1
+  p_count: 1
+  location: 1

@@ -1,0 +1,34 @@
+= form_for @passenger do |f|
+  - if @passenger.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@passenger.errors.count, "error")} prohibited this passenger from being saved:"
+      %ul
+        - @passenger.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :starCount
+    = f.number_field :starCount
+  .field
+    = f.label :money
+    = f.number_field :money
+  .field
+    = f.label :debt
+    = f.number_field :debt
+  .field
+    = f.label :g_count
+    = f.number_field :g_count
+  .field
+    = f.label :c_count
+    = f.number_field :c_count
+  .field
+    = f.label :p_count
+    = f.number_field :p_count
+  .field
+    = f.label :location
+    = f.number_field :location
+  .actions
+    = f.submit 'Save'
