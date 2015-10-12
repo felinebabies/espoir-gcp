@@ -16,3 +16,16 @@
   = link_to "Login", new_user_session_path, :class => "navbar-link"
 
 %h2 開催中のゲーム
+%table
+  %thead
+    %tr
+      %th 開始時刻
+      %th 開催期間（分）
+      %th 状態
+
+  %tbody
+    - @games.each do |game|
+      %tr
+        %td= game.startTime
+        %td= game.term
+        %td= game.status
