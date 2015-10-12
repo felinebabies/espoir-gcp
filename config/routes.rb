@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :games
   get 'entrance/index'
 
   devise_for :users

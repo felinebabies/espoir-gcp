@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  startTime: 2015-10-12 17:54:28
+  term: 1
+  status: 1
+
+two:
+  startTime: 2015-10-12 17:54:28
+  term: 1
+  status: 1
