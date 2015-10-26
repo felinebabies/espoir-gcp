@@ -23,7 +23,7 @@
       %th 開始時刻
       %th 開催期間（分）
       %th 状態
-      %th &nbsp;
+      %th 乗船手続
 
   %tbody
     - @games.each do |game|
@@ -31,4 +31,4 @@
         %td= game.startTime
         %td= game.term
         %td= game.status
-        %td 乗船手続き
+        %td 手続開始

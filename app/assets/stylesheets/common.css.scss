@@ -1,0 +1,16 @@
+// common style sheet
+table {
+  border-collapse: collapse;
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+  td, th {
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 3px;
+    text-align: center;
+  }
+  th {
+    background: #FF9933;
+    color: #FFF;
+  }
+}
