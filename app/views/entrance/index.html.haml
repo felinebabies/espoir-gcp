@@ -15,6 +15,12 @@
   |
   = link_to "Login", new_user_session_path, :class => "navbar-link"
 
+- if current_user
+  - if can? :admin, current_user
+    %p admin information
+  - if can? :member, current_user
+    %p member information
+
 %h2 開催中のゲーム
 %table
   %thead

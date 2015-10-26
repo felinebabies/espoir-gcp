@@ -53,6 +53,7 @@ gem 'haml-rails'
 
 gem 'devise'
 gem 'devise-i18n-views'
+gem 'cancancan'
 
 # メール確認用
 group :development do
